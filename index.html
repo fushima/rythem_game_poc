@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプル音ゲー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>リズムゲーム</h1>
+        <div class="game-info">
+            <div class="score">スコア: <span id="score">0</span></div>
+            <div class="combo">コンボ: <span id="combo">0</span></div>
+            <div class="accuracy">判定: <span id="judgment">-</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <button id="startBtn">ゲーム開始</button>
+            <button id="stopBtn" disabled>ゲーム停止</button>
+        </div>
+        <div class="instructions">
+            <p>キー操作: D, F, J, K を使ってノーツをタップ！</p>
+            <p>タイミングよく押して高スコアを目指そう！</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
